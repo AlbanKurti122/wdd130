@@ -14,7 +14,6 @@
     
     <!-- CSS -->
     <link rel="stylesheet" href="styles/rafting.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header class="header-grid">
@@ -33,14 +32,23 @@
         </div>
     </main>
     <!-- Newsletter Sign-up -->
-    <section class="newsletter">
-        <h2>Join Our Newsletter</h2>
-        <form action="#" method="post">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <button type="submit">Sign Up</button>
-        </form>
-    </section>
+   <form action="/subscribe" method="post" class="newsletter">
+        <fieldset>
+            <legend>Newsletter signup</legend>
+
+            <div class="field">
+                <label for="signup-name">Full name</label>
+                <input type="text" id="signup-name" name="name" autocomplete="name"placeholder="Jane Doe" require />
+            </div>
+
+            <div class="field">
+                <label for="signup-email">Email address</label>
+                <input type="email" id="signup-email" name="email" autocomplete="email" placeholder="jane@example.com" required/>
+            </div>
+
+            <button type="submit" class="btn">Join the newsletter</button>
+        </fieldset>
+    </form>
 
     <!-- Call to Action -->
     <section class="cta">
@@ -65,11 +73,5 @@
    <footer>
         <p>&copy; 2025 Rapid River Rafting. All rights reserved.</p>
     </footer>
-    <div class="social-icons">
-      <i class="fa fa-facebook" aria-hidden="true"></i>
-      <i class="fa fa-twitter" aria-hidden="true"></i>
-      <i class="fa fa-whatsapp" aria-hidden="true"></i>
-      <i class="fa fa-pinterest-p" aria-hidden="true"></i>
-    </div>
 </body>
 </html>
