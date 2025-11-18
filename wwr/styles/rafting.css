@@ -2,7 +2,7 @@
    --primary-color:#055a05; 
    --secondary-color:#f4a261;
    --accent1-color:#264653;
-   --acent2-color:#e9c46a;
+   --accent2-color:#041917;
    --heading-font: "Times New Roman","Gerogia",serif;
    --body-font:Arial, Helvetica, sans-serif;
 }
@@ -51,4 +51,13 @@ h1 {
 .hero article img{
     float: right;
     width: 125px;
+}
+.hero article{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: var(--accent2-color);
+    color:var(--secondary-color) ;
+    padding: 1rem;
+    opacity: 0.8;
 }
