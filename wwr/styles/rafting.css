@@ -19,6 +19,12 @@ header, main, footer{
     width: 840px;
     margin: 0 auto;
 }
+header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 1rem 0;
+}
 h1, h2{
     font-family: var(--heading-font);
     color: var(--primary-color);
@@ -26,6 +32,17 @@ h1, h2{
 nav , p, section, article{
     margin: 16px;
     padding: 8px;
+}
+nav ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    justify-content: flex-end;
+}
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--accent1-color);
 }
 .socialmedia a{
     text-decoration: none;
@@ -60,4 +77,37 @@ h1 {
     color:var(--secondary-color) ;
     padding: 1rem;
     opacity: 0.8;
+}
+.history-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+    align-items: center;
+}
+.history-grid img {
+    width: 100%;
+    border-radius: 8px;
+}
+.adventure-gallery {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+.adventure-gallery figure {
+    width: 18%;
+    text-align: center;
+}
+.adventure-gallery img {
+    width: 100%;
+    border-radius: 8px;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .socialmedia {
+    display: flex;
+    gap: 1rem;
 }
