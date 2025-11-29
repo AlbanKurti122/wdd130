@@ -229,3 +229,13 @@ footer .socialmedia {
     font-weight: bold;
     color: var(--accent1-color);
 }
+.contact-title {
+    position: static;
+    background: none;
+    opacity: 1;
+    color: var(--primary-color);
+    padding: 0;
+    text-align: center; 
+    font-size: 2rem; 
+    margin: 1rem 0;
+}
