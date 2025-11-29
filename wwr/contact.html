@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact White River Adventures for reservations, questions, and general inquiries. Get in touch with our team today!">
+    <meta name="author" content="Alban Kurti">
+    <link rel="stylesheet" href="styles/rafting.css">
+    <title>Contact Us – White River Adventures</title>
+</head>
+
+<body>
+    <header>
+        <img src="images/z-wwr-blue.jpg" alt="White Water Rafting Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- COMPANY INFORMATION -->
+        <section class="company-info">
+            <h2>White River Adventures</h2>
+
+            <p>123 Main River Street<br>
+               Kolob, California<br>
+               +1 999 999 9999<br>
+               info@whiteriver.com
+            </p>
+
+            <!-- Embedded Google Map -->
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18..." 
+                width="600" 
+                height="450" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+
+
+        <!-- CONTACT FORM -->
+        <section class="contact-form">
+
+            <form>
+                <label>Name</label>
+                <input type="text" name="fullname" placeholder="Your Name" required>
+
+                <label>Email</label>
+                <input type="email" name="email" placeholder="Your Email" required>
+
+                <p>Message Purpose</p>
+
+                <label>
+                    <input type="radio" name="purpose" value="general inquiry" required>
+                    General Inquiry
+                </label>
+
+                <label>
+                    <input type="radio" name="purpose" value="reservation question">
+                    Reservation Question
+                </label>
+
+                <label>
+                    <input type="radio" name="purpose" value="website suggestion">
+                    Website Suggestion
+                </label>
+
+                <label>Message</label>
+                <textarea name="message" placeholder="Type here..." required></textarea>
+
+                <label>
+                    <input type="checkbox" name="newsletter">
+                    Please subscribe me to the monthly newsletter
+                </label>
+
+                <button type="submit">Get in Touch!</button>
+            </form>
+        </section>
+
+
+        <!-- EMPLOYEE PROFILES -->
+        <section class="employees">
+            <h2>We Are Here to Serve You</h2>
+
+            <div class="profile-grid">
+
+                <figure>
+                    <img src="images/employee1.webp" alt="Employee Profile 1">
+                    <figcaption>Sarah Johnson – Lead Guide</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/employee2.jpg" alt="Employee Profile 2">
+                    <figcaption>Michael Rivera – Safety Coordinator</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/employee3.jpg" alt="Employee Profile 3">
+                    <figcaption>Emily Clark – Customer Support</figcaption>
+                </figure>
+
+            </div>
+        </section>
+
+    </main>
+
+       <footer>
+                <p>&copy; 2025 | White Water Rafting Co. | Alban Kurti</p>
+            <nav class="socialmedia">
+                <a href="https://facebook.com">
+                    <img src="images/facebook.png" alt="Facebook" width="45">
+                 </a>
+
+                <a href="https://whatsapp.com">
+                    <img src="images/whatsapp.png" alt="WhatsApp" width="45">
+                </a>
+
+                <a href="https://instagram.com">
+                    <img src="images/instagram.png" alt="Instagram" width="45">
+                </a>
+            </nav>
+        </footer>
+</body>
+</html>
