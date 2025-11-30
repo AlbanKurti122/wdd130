@@ -239,3 +239,155 @@ footer .socialmedia {
     font-size: 2rem; 
     margin: 1rem 0;
 }
+
+.hero {
+    position: relative;
+    width: 100%;
+}
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.hero h1 {
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    background-color: var(--accent1-color);
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+}
+/* NEWSLETTER */
+.newsletter {
+    background-color: #f7f7f7;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+}
+
+.newsletter form {
+    display: grid;
+    gap: 1rem;
+}
+
+.newsletter input {
+    padding: .7rem;
+    border: 1px solid var(--accent1-color);
+    border-radius: 6px;
+}
+
+.newsletter button {
+    padding: .8rem;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* CTA */
+.cta {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.cta-button {
+    padding: .8rem 1.5rem;
+    background: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+/* GRID */
+.purpose-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.purpose-grid img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* ===========================
+   TRIPS PAGE
+=========================== */
+
+/* Small H1 styling */
+.contact-title {
+    position: static;
+    background: none;
+    color: var(--primary-color);
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 2rem;
+}
+
+/* CTA on Trips Page */
+.trips-cta {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+/* Trip Cards */
+.trip-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.trip-card {
+    background-color: #f7f7f7;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.trip-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.trip-card h3 {
+    margin-top: 0.7rem;
+    color: var(--primary-color);
+}
+
+/* Responsive Trip Grid */
+@media (max-width: 800px) {
+    .trip-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Trips Table */
+.trips-table {
+    margin: 2rem 0;
+}
+
+.trips-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.trips-table th,
+.trips-table td {
+    border: 1px solid var(--accent1-color);
+    padding: 0.7rem;
+    text-align: center;
+}
+
+.trips-table th {
+    background-color: var(--accent2-color);
+    color: white;
+}
+
+.trips-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
